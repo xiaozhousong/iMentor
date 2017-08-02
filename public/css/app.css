@@ -1,0 +1,355 @@
+@font-face {
+    font-family: big_noodle_titling;
+    src: url('{{ asset('big_noodle_titling.ttf') }}');
+}
+
+html, body, .container-table {
+    height: 100%;
+}
+.full{
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.full2{
+  background: url(images/bg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container-table {
+  display: table;
+}
+.vertical-center-row {
+  display: table-cell;
+  vertical-align: middle;
+  
+}
+.homeelement{
+  margin: 1vw;
+}
+.homeelementlogo{
+  margin: 3vw;
+}
+.logo{
+  height: 5.9vw;
+}
+.menulogo{
+  display: inline-block;
+  height: 10%;
+ 
+}
+.loginform{
+  height: 2vw;
+}
+.logoutp{
+  color: #037a6f;
+}
+.logoutn{
+  color: #037a6f;
+}
+.form-control {   
+  border-radius: 0px; 
+  height: 2.5vw;
+  text-align: center;
+}
+.btn-block {
+  height: 45px;
+  background-color: #037A6F;
+}
+.btn{
+  border-radius: 0px;
+  color: white;
+}
+.loginp{
+  color: white;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+   font-weight:100;
+   font-size: 20px;
+}
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+   font-family: 'Roboto', sans-serif;
+   font-weight:100;
+   font-size: 20px;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+   font-family: 'Roboto', sans-serif;  
+   font-weight:100;
+   font-size: 20px;
+}
+:-ms-input-placeholder {  
+   text-align: center;
+   font-family: 'Roboto', sans-serif; 
+   font-weight:100;
+   font-size: 20px;
+}
+.loginbtn{
+   font-family: 'Roboto', sans-serif; 
+   font-weight:700;
+   font-size: 20px;
+}
+
+
+
+/* --------Nav overlay---------
+*/
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+  position: absolute;
+  margin: auto;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 32%;
+  /*background-color: #ccc;
+  border-radius: 3px;*/  
+}
+
+.overlay a {
+    padding: 0.1em;
+    text-decoration: none;
+    font-size: 4vw;
+    color: #f2f2f2;
+    display: block;
+    transition: 0.3s;
+    
+    font-family: 'big_noodle_titling', sans-serif;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #037a6f;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    font-size: 5.9vw;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 5.9vw;
+    top: 15px;
+    right: 35px;
+  }
+}
+.menutitle{
+  font-family: 'big_noodle_titling', sans-serif;
+  font-size: 4vw;
+  color: #f2f2f2;
+
+}
+.filtertitle{
+  font-family: 'big_noodle_titling', sans-serif;
+  font-size: 1.5vw;
+  color: #f2f2f2;
+
+}
+.menup{
+  font-family: 'Roboto', sans-serif; 
+   font-weight:400;
+   font-size: 0.5vw;
+   color: #f2f2f2;
+}
+
+
+
+/* --------Nav---------
+*/
+
+.ilogo{
+  float: right;
+}
+
+.userdetail{
+  margin-top: 5%;
+  font-family: 'Roboto', sans-serif; 
+  font-weight:700;
+  font-size: 1vw;
+  color: white;
+  float: right;
+
+
+}
+.userdetailblack{
+  margin-top: 5%;
+  font-family: 'Roboto', sans-serif; 
+  font-weight:700;
+  font-size: 1vw;
+ 
+  float: right;
+
+}
+
+
+/* --------select tutor---------
+*/
+
+.hun{
+  width: 60%;
+  height: 10%;
+ 
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  color: white;
+  font-family: 'Roboto', sans-serif; 
+  font-weight:700;
+  font-size: 1vw;
+}
+.tutorselect{
+  margin-left: -15px;
+  height: 6vh;
+}
+.tutorgo{
+  height: 6vh;
+  width: 6vh;
+  margin-left: -1.7vh;
+  font-size: 1.2em;
+}
+.maincontent{
+  
+  position: relative;
+  
+}
+
+.darker{
+  background-color: rgba(0,0,0, 0.15);
+  font-family: 'big_noodle_titling', sans-serif;
+  font-size: 1.5em;
+  
+}
+.ligther{
+  background-color: rgba(0,0,0, 0.05);
+  font-family: 'Roboto', sans-serif; 
+  font-weight:400;
+  font-size: 1em;
+}
+
+.table {
+  display:table;
+  border-collapse: collapse;
+}
+.mainrow {
+  display:table-row;
+}
+
+
+
+.cell {
+  display:table-cell;
+  padding:2vh;
+  /*border:0.5px solid white;*/
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 1px;
+  height: 4em;
+  vertical-align: bottom;
+  padding-left: 1em;
+
+
+}
+
+
+
+
+.filter_button{
+ background-color: #037a6f;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.centertable{
+  text-align: center;
+}
+
+.mainbutton{
+
+  position:absolute;
+  bottom: 5%; 
+  font-family: 'big_noodle_titling', sans-serif;
+  font-size: 1.8em;
+}
+.filterbutton{
+
+  position:absolute;
+  bottom: 18%; 
+  font-family: 'big_noodle_titling', sans-serif;
+  font-size: 1.8em;
+}
+.maincontent{
+  height: 80vh;
+  position: relative;
+}
+.reason_important{
+  margin: 20px;
+}
+
+
+
+
+
+/*-----------------upcoming-----------------*/
+
+.pagestitle{
+  font-family: 'big_noodle_titling', sans-serif;
+  font-size: 2.5em;
+}
+.pagestitlesub{
+  font-family: 'big_noodle_titling', sans-serif;
+  font-size: 2em;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #037a6f;
+    border-color: #046357;
+
+    }
+
+.pagination>li>a, .pagination>li>span {
+ position: static; 
+}
+
+.pagination>li>a, .pagination>li>span {
+  
+  color: #037a6f;
+ 
+}
